@@ -14,6 +14,7 @@
 		A4BECC2126F4AA0100F99E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4BECC2026F4AA0100F99E84 /* Assets.xcassets */; };
 		A4BECC2426F4AA0100F99E84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BECC2226F4AA0100F99E84 /* LaunchScreen.storyboard */; };
 		A4BECC3226F4AA3600F99E84 /* BankAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BECC3126F4AA3600F99E84 /* BankAppTests.swift */; };
+		A4BECC3B26F4AB4C00F99E84 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BECC3A26F4AB4C00F99E84 /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A4BECC2F26F4AA3500F99E84 /* BankAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BECC3126F4AA3600F99E84 /* BankAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppTests.swift; sourceTree = "<group>"; };
 		A4BECC3326F4AA3600F99E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4BECC3A26F4AB4C00F99E84 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		A4BECC1626F4AA0000F99E84 /* BankApp */ = {
 			isa = PBXGroup;
 			children = (
+				A4BECC3926F4AB4700F99E84 /* Models */,
 				A4BECC1726F4AA0000F99E84 /* AppDelegate.swift */,
 				A4BECC1926F4AA0000F99E84 /* SceneDelegate.swift */,
 				A4BECC1B26F4AA0000F99E84 /* ViewController.swift */,
@@ -97,6 +100,14 @@
 				A4BECC3326F4AA3600F99E84 /* Info.plist */,
 			);
 			path = BankAppTests;
+			sourceTree = "<group>";
+		};
+		A4BECC3926F4AB4700F99E84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4BECC3A26F4AB4C00F99E84 /* Account.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4BECC1C26F4AA0000F99E84 /* ViewController.swift in Sources */,
+				A4BECC3B26F4AB4C00F99E84 /* Account.swift in Sources */,
 				A4BECC1826F4AA0000F99E84 /* AppDelegate.swift in Sources */,
 				A4BECC1A26F4AA0000F99E84 /* SceneDelegate.swift in Sources */,
 			);
