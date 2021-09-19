@@ -17,9 +17,21 @@ class BankAppTests: XCTestCase {
         
         account = Account()
     }
-
+    
+    override func tearDown() {
+        super.tearDown()
+        
+        // This will be called after every test.
+    }
+    
     func test_InitialBalanceZero() {
         XCTAssertTrue(account.balance == 0, "Balance is not zero!")
+    }
+    
+    func test_WithdrawFunds() {
+        account.deposit(50)
+        
+        XCTAssertThrowsError(try account.withdraw(100))
     }
     
     func test_DepositFunds() {

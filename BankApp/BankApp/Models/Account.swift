@@ -13,4 +13,22 @@ struct Account {
     mutating func deposit(_ amount: Double) {
         balance += amount
     }
+    
+    
+    mutating func withdraw(_ amount: Double) throws {
+        let amount = abs(amount)
+        
+        if amount > balance {
+            throw AccountError.withdraw
+        }
+        
+        balance -= amount
+        
+        print("Success! The balanceis $\(balance) now.")
+    }
+    
+    enum AccountError: Error {
+        case withdraw
+    }
+    
 }
