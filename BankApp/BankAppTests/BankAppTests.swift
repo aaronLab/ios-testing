@@ -30,9 +30,17 @@ class BankAppTests: XCTestCase {
     
     func test_WithdrawFunds() {
         account.deposit(50)
+        try? account.withdraw(50)
         
-        XCTAssertThrowsError(try account.withdraw(100))
-        XCTAssertEqual(50, account.balance)
+        XCTAssertEqual(0, account.balance)
+    }
+    
+    func test_WithdrawFromInsufficientBalance() {
+        account.deposit(100)
+        
+        XCTAssertThrowsError(try account.withdraw(300)) { error in
+            XCTAssertEqual(error as! AccountError, .insufficient)
+        }
     }
     
     func test_DepositFunds() {

@@ -19,7 +19,7 @@ struct Account {
         let amount = abs(amount)
         
         if amount > balance {
-            throw AccountError.withdraw
+            throw AccountError.insufficient
         }
         
         balance -= amount
@@ -27,8 +27,8 @@ struct Account {
         print("Success! The balanceis $\(balance) now.")
     }
     
-    enum AccountError: Error {
-        case withdraw
-    }
-    
+}
+
+enum AccountError: Error {
+    case insufficient
 }
