@@ -1,14 +1,13 @@
 //
 //  AppDelegate.swift
-//  TestingMultipleExpectations
+//  MultipleExpectations
 //
-//  Created by Mohammad Azam on 5/8/20.
-//  Copyright © 2020 Mohammad Azam. All rights reserved.
+//  Created by Aaron Lee on 2021/09/20.
 //
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
