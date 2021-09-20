@@ -13,7 +13,20 @@
 		A44773D026F8B075005E4F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44773CF26F8B075005E4F9F /* Assets.xcassets */; };
 		A44773D326F8B075005E4F9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44773D226F8B075005E4F9F /* Preview Assets.xcassets */; };
 		A44773D626F8B075005E4F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44773D426F8B075005E4F9F /* LaunchScreen.storyboard */; };
+		A44773DE26F8B08E005E4F9F /* Notification+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44773DD26F8B08E005E4F9F /* Notification+Ext.swift */; };
+		A44773E026F8B0B0005E4F9F /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44773DF26F8B0B0005E4F9F /* AlertManager.swift */; };
+		A44773E826F8B0DA005E4F9F /* MultipleExpectationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44773E726F8B0DA005E4F9F /* MultipleExpectationsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A44773EA26F8B0DA005E4F9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A44773BE26F8B074005E4F9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A44773C526F8B074005E4F9F;
+			remoteInfo = MultipleExpectations;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A44773C626F8B074005E4F9F /* MultipleExpectations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleExpectations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,22 @@
 		A44773D226F8B075005E4F9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A44773D526F8B075005E4F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A44773D726F8B075005E4F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A44773DD26F8B08E005E4F9F /* Notification+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Ext.swift"; sourceTree = "<group>"; };
+		A44773DF26F8B0B0005E4F9F /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		A44773E526F8B0DA005E4F9F /* MultipleExpectationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleExpectationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44773E726F8B0DA005E4F9F /* MultipleExpectationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleExpectationsTests.swift; sourceTree = "<group>"; };
+		A44773E926F8B0DA005E4F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A44773C326F8B074005E4F9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A44773E226F8B0DA005E4F9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A44773C826F8B074005E4F9F /* MultipleExpectations */,
+				A44773E626F8B0DA005E4F9F /* MultipleExpectationsTests */,
 				A44773C726F8B074005E4F9F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				A44773C626F8B074005E4F9F /* MultipleExpectations.app */,
+				A44773E526F8B0DA005E4F9F /* MultipleExpectationsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,10 +86,12 @@
 				A44773C926F8B074005E4F9F /* AppDelegate.swift */,
 				A44773CB26F8B074005E4F9F /* SceneDelegate.swift */,
 				A44773CD26F8B074005E4F9F /* ContentView.swift */,
+				A44773DD26F8B08E005E4F9F /* Notification+Ext.swift */,
 				A44773CF26F8B075005E4F9F /* Assets.xcassets */,
 				A44773D426F8B075005E4F9F /* LaunchScreen.storyboard */,
 				A44773D726F8B075005E4F9F /* Info.plist */,
 				A44773D126F8B075005E4F9F /* Preview Content */,
+				A44773DF26F8B0B0005E4F9F /* AlertManager.swift */,
 			);
 			path = MultipleExpectations;
 			sourceTree = "<group>";
@@ -73,6 +102,15 @@
 				A44773D226F8B075005E4F9F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A44773E626F8B0DA005E4F9F /* MultipleExpectationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A44773E726F8B0DA005E4F9F /* MultipleExpectationsTests.swift */,
+				A44773E926F8B0DA005E4F9F /* Info.plist */,
+			);
+			path = MultipleExpectationsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +133,24 @@
 			productReference = A44773C626F8B074005E4F9F /* MultipleExpectations.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A44773E426F8B0DA005E4F9F /* MultipleExpectationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A44773EC26F8B0DA005E4F9F /* Build configuration list for PBXNativeTarget "MultipleExpectationsTests" */;
+			buildPhases = (
+				A44773E126F8B0DA005E4F9F /* Sources */,
+				A44773E226F8B0DA005E4F9F /* Frameworks */,
+				A44773E326F8B0DA005E4F9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A44773EB26F8B0DA005E4F9F /* PBXTargetDependency */,
+			);
+			name = MultipleExpectationsTests;
+			productName = MultipleExpectationsTests;
+			productReference = A44773E526F8B0DA005E4F9F /* MultipleExpectationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +162,10 @@
 				TargetAttributes = {
 					A44773C526F8B074005E4F9F = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					A44773E426F8B0DA005E4F9F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A44773C526F8B074005E4F9F;
 					};
 				};
 			};
@@ -123,6 +183,7 @@
 			projectRoot = "";
 			targets = (
 				A44773C526F8B074005E4F9F /* MultipleExpectations */,
+				A44773E426F8B0DA005E4F9F /* MultipleExpectationsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +199,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A44773E326F8B0DA005E4F9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,13 +213,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44773DE26F8B08E005E4F9F /* Notification+Ext.swift in Sources */,
 				A44773CA26F8B074005E4F9F /* AppDelegate.swift in Sources */,
+				A44773E026F8B0B0005E4F9F /* AlertManager.swift in Sources */,
 				A44773CC26F8B074005E4F9F /* SceneDelegate.swift in Sources */,
 				A44773CE26F8B074005E4F9F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A44773E126F8B0DA005E4F9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44773E826F8B0DA005E4F9F /* MultipleExpectationsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A44773EB26F8B0DA005E4F9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A44773C526F8B074005E4F9F /* MultipleExpectations */;
+			targetProxy = A44773EA26F8B0DA005E4F9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A44773D426F8B075005E4F9F /* LaunchScreen.storyboard */ = {
@@ -323,6 +409,46 @@
 			};
 			name = Release;
 		};
+		A44773ED26F8B0DA005E4F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U769Q36UT;
+				INFOPLIST_FILE = MultipleExpectationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.aaronlab.MultipleExpectationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipleExpectations.app/MultipleExpectations";
+			};
+			name = Debug;
+		};
+		A44773EE26F8B0DA005E4F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U769Q36UT;
+				INFOPLIST_FILE = MultipleExpectationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.aaronlab.MultipleExpectationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipleExpectations.app/MultipleExpectations";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +466,15 @@
 			buildConfigurations = (
 				A44773DB26F8B075005E4F9F /* Debug */,
 				A44773DC26F8B075005E4F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A44773EC26F8B0DA005E4F9F /* Build configuration list for PBXNativeTarget "MultipleExpectationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44773ED26F8B0DA005E4F9F /* Debug */,
+				A44773EE26F8B0DA005E4F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
