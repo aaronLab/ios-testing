@@ -12,6 +12,10 @@
 		A4E8E1B326FAE54200231F0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E8E1B226FAE54200231F0C /* Assets.xcassets */; };
 		A4E8E1B626FAE54200231F0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E8E1B526FAE54200231F0C /* Preview Assets.xcassets */; };
 		A4E8E1C026FAE54300231F0C /* PedometerAppTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E8E1BF26FAE54300231F0C /* PedometerAppTestsTests.swift */; };
+		A4E8E1DB26FAEB0900231F0C /* PedometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E8E1DA26FAEB0900231F0C /* PedometerViewModel.swift */; };
+		A4E8E1DD26FAEB4900231F0C /* Pedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E8E1DC26FAEB4900231F0C /* Pedometer.swift */; };
+		A4E8E1DF26FAEBA100231F0C /* MockPedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E8E1DE26FAEBA100231F0C /* MockPedometer.swift */; };
+		A4E8E1E126FAEDBB00231F0C /* CMPedometer+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E8E1E026FAEDBB00231F0C /* CMPedometer+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,10 @@
 		A4E8E1BB26FAE54300231F0C /* PedometerAppTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedometerAppTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E8E1BF26FAE54300231F0C /* PedometerAppTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerAppTestsTests.swift; sourceTree = "<group>"; };
 		A4E8E1D826FAE72900231F0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E8E1DA26FAEB0900231F0C /* PedometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerViewModel.swift; sourceTree = "<group>"; };
+		A4E8E1DC26FAEB4900231F0C /* Pedometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedometer.swift; sourceTree = "<group>"; };
+		A4E8E1DE26FAEBA100231F0C /* MockPedometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPedometer.swift; sourceTree = "<group>"; };
+		A4E8E1E026FAEDBB00231F0C /* CMPedometer+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMPedometer+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +82,14 @@
 		A4E8E1AD26FAE54200231F0C /* PedometerAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				A4E8E1DA26FAEB0900231F0C /* PedometerViewModel.swift */,
+				A4E8E1DC26FAEB4900231F0C /* Pedometer.swift */,
 				A4E8E1D826FAE72900231F0C /* Info.plist */,
 				A4E8E1AE26FAE54200231F0C /* PedometerAppTestsApp.swift */,
 				A4E8E1B026FAE54200231F0C /* ContentView.swift */,
 				A4E8E1B226FAE54200231F0C /* Assets.xcassets */,
 				A4E8E1B426FAE54200231F0C /* Preview Content */,
+				A4E8E1E026FAEDBB00231F0C /* CMPedometer+Ext.swift */,
 			);
 			path = PedometerAppTests;
 			sourceTree = "<group>";
@@ -95,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				A4E8E1BF26FAE54300231F0C /* PedometerAppTestsTests.swift */,
+				A4E8E1DE26FAEBA100231F0C /* MockPedometer.swift */,
 			);
 			path = PedometerAppTestsTests;
 			sourceTree = "<group>";
@@ -200,7 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E8E1B126FAE54200231F0C /* ContentView.swift in Sources */,
+				A4E8E1DB26FAEB0900231F0C /* PedometerViewModel.swift in Sources */,
 				A4E8E1AF26FAE54200231F0C /* PedometerAppTestsApp.swift in Sources */,
+				A4E8E1DD26FAEB4900231F0C /* Pedometer.swift in Sources */,
+				A4E8E1E126FAEDBB00231F0C /* CMPedometer+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E8E1C026FAE54300231F0C /* PedometerAppTestsTests.swift in Sources */,
+				A4E8E1DF26FAEBA100231F0C /* MockPedometer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,28 +11,13 @@ import CoreMotion
 
 class PedometerAppTestsTests: XCTestCase {
 
-    func test_CMPedometer_LoadingHistorialDate() {
+    func test_StartsPedometer() {
         
-        let now = Date()
-        let then = now.addingTimeInterval(-1000)
-        var data: CMPedometerData?
-        let exp = expectation(description: "Pedometer query returns")
+        let mockPedometer = MockPedometer()
+        let pedometerVM = PedometerViewModel(pedometer: mockPedometer)
+        pedometerVM.startPedometer()
         
-        let pedometer = CMPedometer()
-        pedometer.queryPedometerData(from: now, to: then) { pedometerData, error in
-            
-            data = pedometerData
-            exp.fulfill()
-            
-        }
-        
-        wait(for: [exp], timeout: 1.0)
-        
-        XCTAssertNotNil(data)
-        
-        if let steps = data?.numberOfSteps {
-            XCTAssertTrue(steps.intValue > 0)
-        }
+        XCTAssertTrue(mockPedometer.started)
         
     }
 
