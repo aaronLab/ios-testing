@@ -6,28 +6,34 @@
 //
 
 import XCTest
+import CoreMotion
 @testable import PedometerAppTests
 
 class PedometerAppTestsTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func test_CMPedometer_LoadingHistorialDate() {
+        
+        let now = Date()
+        let then = now.addingTimeInterval(-1000)
+        var data: CMPedometerData?
+        let exp = expectation(description: "Pedometer query returns")
+        
+        let pedometer = CMPedometer()
+        pedometer.queryPedometerData(from: now, to: then) { pedometerData, error in
+            
+            data = pedometerData
+            exp.fulfill()
+            
         }
+        
+        wait(for: [exp], timeout: 1.0)
+        
+        XCTAssertNotNil(data)
+        
+        if let steps = data?.numberOfSteps {
+            XCTAssertTrue(steps.intValue > 0)
+        }
+        
     }
 
 }
